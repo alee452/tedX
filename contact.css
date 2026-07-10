@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'bernoru';
+    src: url('fonts/semiCondesnsedBernoru.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'canvasans';
+    src: url('fonts/CanvaSans-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'dmsans';
+    src: url('fonts/dmsans.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+
+.header {
+    font-family: dmsans;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100vw;
+    height: 5vh;
+    z-index: 2;
+    position: fixed;
+    font-size: 1.1vw;
+    background-color: #000000b9;
+    height: 7vh;
+    align-items: center;
+}
+
+.headerButtons {
+    padding-right: 1vw;
+    display: flex;
+    gap: 1vw;
+}
+
+.headerButtonCurrent {
+    color: white;
+    pointer-events: none;
+}
+
+.headerButton {
+    cursor: pointer;
+    color: #ACACAC;
+    text-decoration: none;    
+}
+
+.background {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.heroBanner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000088;
+}
+
+.title {
+    font-family: bernoru;
+    font-size: 10vw;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    background-color: black;
+    color: white;
+}
+
+.linkImg {
+    width: 3vw;
+    cursor: pointer;
+}
+
+.footerLinks {
+    padding-left: 2vw;
+    gap: 1vw;
+    display: flex;
+}
+
+.footerParagraph {
+    font-family: dmsans;
+    text-align: right;
+    padding-right: 1.5vw;
+}
+
+.footerLink {
+    color: #E62225;
+    transition: color 0.2s ease;
+}
+
+.footerLink:hover {
+    color: white;
+}
+.role {
+    font-family: canvasans;
+    color: #E62225;
+    padding: 0;
+    margin: 0;
+}
+
+.name {
+    font-family: canvasans;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bigRow {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.image {
+    width: 14vw;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 4.5vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+
+.bigger-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0.5vw;
+}

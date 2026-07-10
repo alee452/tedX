@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'bernoru';
+    src: url('fonts/semiCondesnsedBernoru.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'canvasans';
+    src: url('fonts/CanvaSans-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'dmsans';
+    src: url('fonts/dmsans.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+
+    display: flex;
+  flex-direction: column;
+}
+
+.header {
+    font-family: dmsans;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100vw;
+    height: 5vh;
+    z-index: 2;
+    position: fixed;
+    font-size: 1.1vw;
+    height: 7vh;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.951);
+}
+
+.headerButtons {
+    padding-right: 1vw;
+    display: flex;
+    gap: 1vw;
+}
+
+.headerButton {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;    
+}
+
+.column {
+    width: 100%;
+    height: fit-content;
+    padding-top: 10vh;
+    margin: 0;
+    padding-bottom: 5vh;
+
+     flex: 1 0 auto;
+}
+
+.title {
+    font-family: bernoru;
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+    padding-left: 5vw;
+}
+
+.paragraph {
+    margin-top: 0;
+    width: 90vw;
+    font-family: dmsans;
+    padding-left: 5vw;
+}
+
+.heading {
+    margin-top: 4vh;
+    margin-bottom: 0;
+    font-family: canvasans;
+    padding-left: 5vw;
+}
+
+ul {
+    padding-left: 6vw;
+}
+
+li {
+    font-family: dmsans;
+}
+
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    background-color: black;
+    color: white;
+
+    flex-shrink: 0;
+}
+
+.linkImg {
+    width: 3vw;
+    cursor: pointer;
+}
+
+.footerLinks {
+    padding-left: 2vw;
+    gap: 1vw;
+    display: flex;
+}
+
+.footerParagraph {
+    font-family: dmsans;
+    text-align: right;
+    padding-right: 1.5vw;
+}
+
+.footerLink {
+    color: #E62225;
+    transition: color 0.2s ease;
+}
+
+.footerLink:hover {
+    color: white;
+}

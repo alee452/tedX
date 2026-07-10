@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'bernoru';
+    src: url('fonts/semiCondesnsedBernoru.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'canvasans';
+    src: url('fonts/CanvaSans-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'dmsans';
+    src: url('fonts/dmsans.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    pointer-events: none;
+}
+
+
+.header {
+    font-family: dmsans;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100vw;
+    height: 5vh;
+    z-index: 2;
+    position: fixed;
+    font-size: 1.1vw;
+    background-color: #000000b9;
+    height: 7vh;
+    align-items: center;
+    pointer-events: auto;
+}
+
+.headerButtons {
+    padding-right: 1vw;
+    display: flex;
+    gap: 1vw;
+}
+
+.headerButtonCurrent {
+    color: white;
+    pointer-events: none;
+}
+
+.headerButton {
+    cursor: pointer;
+    color: #ACACAC;
+    text-decoration: none;    
+}
+
+.background {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.heroBanner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.header1 {
+    font-family: dmsans;
+    font-size: 1vw;
+    padding-left: 6vw;
+    pointer-events: auto;
+}
+
+.title {
+    font-family: 'bernoru';
+    font-size: 9vw;
+    margin: 0;
+    padding-left: 6vw;
+    word-spacing: -0.3em;
+    color: #E62225;
+    pointer-events: auto;
+}
+
+
+.tedxSection {
+    pointer-events: none;
+    background-color: white;
+    color: black;
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    scroll-margin-top: 7vh;
+    
+    position: relative;
+    z-index: -2;
+    pointer-events: auto;
+}
+
+.triangle {
+    width: 20vw;
+    position: absolute;
+    bottom: -3vh;
+    right: -14vw;
+    height: 40vh;
+    z-index: -1;
+}
+
+.star {
+    width: 21vw;
+    height: 60vh;
+    position: absolute;
+    top: -13vh;
+    left: -10vw;
+    z-index: -1;
+}
+
+.square {
+    width: 30vw;
+    position: absolute;
+    top: -2vh;
+    left: -22vw;
+    height: 60vh;
+    z-index: -1;
+    pointer-events: all;
+}
+
+.circle {
+    width: 20vw;
+    position: absolute;
+    bottom: -15vh;
+    right: -13vw;
+    height: auto;
+    z-index: -1;
+}
+
+
+#triangle,
+#Star,
+#tedSquareShape,
+#circle {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#tedSquareShape {
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotate(15deg);
+}
+
+
+
+
+#triangle:hover {
+    transform: rotate(-5deg);
+}
+
+#Star:hover {
+    transform: rotate(4deg);
+}
+
+#tedSquareShape:hover {
+    transform: rotate(10deg);
+}
+
+#circle:hover {
+    transform: translate(0.5vw, 1vh);
+}
+
+
+.header2 {
+    font-family: bernoru;
+    font-size: 5vh;
+    margin: 0;
+    padding: 0;
+    color: #E62225;
+    pointer-events: auto;
+}
+
+.subtitle1 {
+    font-family: dmsans;
+    font-weight: bold;
+    margin: 0;
+    pointer-events: auto;
+}
+
+.paragraph {
+    font-family: dmsans;
+    pointer-events: auto;
+}
+
+.verticalTedX {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+
+.learnMore {
+    background-color: black;
+    font-family: dmsans;
+    color: white;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    border: black 2px solid;
+    transition: background-color 0.6s ease, color 0.6s ease, border 0.6s ease;
+    pointer-events: auto;
+}
+
+.learnMore:hover {
+    background-color: white;
+    color: black;
+    border: black 2px solid;
+    pointer-events: auto;
+}
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 40%;
+}
+
+.tedSection {
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.paragraph2 {
+    font-family: dmsans;
+    text-align: center;
+    width: 70vw;
+    font-size: 1.2vw;
+    margin: 0;
+    pointer-events: auto;
+}
+
+.learnMoreInverted {
+    background-color: white;
+    font-family: dmsans;
+    color: black;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    margin-top: 3vh;
+    border: white 2px solid;
+    transition: background-color 0.6s ease, color 0.6s ease, border 0.6s ease;
+    pointer-events: auto;
+}
+
+.learnMoreInverted:hover {
+    background-color: black;
+    color: white;
+    border: white 2px solid;
+}
+
+.ticketsSection {
+    z-index: -2;
+    background-color: white;
+    color: black;
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    pointer-events: auto;
+}
+
+.ticketSquare {
+    width: 40vw;
+    height: auto;
+}
+
+#Line1, #Line2, #ticketSquareShape, #buynow {
+    cursor: pointer;
+}
+
+#ticketSquareShape {
+    transform-box: fill-box;
+    transition: transform 0.3s ease;
+    transform: rotate(15deg);
+}
+
+#BUYTICKETSNOW {
+    cursor: text;
+}
+
+#Line1:hover ~ #ticketSquareShape,
+#Line2:hover ~ #ticketSquareShape,
+#buynow:hover ~ #ticketSquareShape,
+#ticketSquareShape:hover {
+    transform: rotate(11deg);
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+
+.footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    pointer-events: auto;
+}
+
+
+.linkImg {
+    width: 3vw;
+    cursor: pointer;
+}
+
+.footerLinks {
+    padding-left: 2vw;
+    gap: 1vw;
+    display: flex;
+}
+
+.footerParagraph {
+    font-family: dmsans;
+    text-align: right;
+    padding-right: 1.5vw;
+}
+
+.footerLink {
+    color: #E62225;
+    transition: color 0.2s ease;
+}
+
+.footerLink:hover {
+    color: white;
+}
